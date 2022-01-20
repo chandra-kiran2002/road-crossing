@@ -7,7 +7,6 @@ import random
 screen = Screen()
 screen.tracer(0)
 def game():
-
     player = Player()
     screen.setup(width=600, height=600)
     car_manager = CarManager()
