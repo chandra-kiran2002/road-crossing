@@ -9,6 +9,7 @@ import random
 class CarManager:
     def __init__(self):
         self.cars = []
+        self.carSpeed=10
 
     def create(self):
         tim = Turtle()
@@ -22,7 +23,7 @@ class CarManager:
 
     def move(self):
         for x in range(0, len(self.cars)):
-            self.cars[x].forward(10)
+            self.cars[x].forward(self.carSpeed)
 
     def remover(self):
         for x in self.cars:
